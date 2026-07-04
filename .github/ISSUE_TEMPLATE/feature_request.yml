@@ -1,0 +1,25 @@
+name: Feature request
+description: 建議新格式、轉換策略或維運功能
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: token
+    attributes:
+      label: Expected impact on Markdown size or RAG token usage
+  - type: textarea
+    id: security
+    attributes:
+      label: Security considerations

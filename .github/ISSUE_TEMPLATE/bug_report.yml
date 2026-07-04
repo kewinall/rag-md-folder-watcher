@@ -1,0 +1,50 @@
+name: Bug report
+description: 回報轉換、監控、容器或輸出問題
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 請勿上傳真實敏感文件、密碼、Token 或可利用漏洞細節。
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 1.0.1
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows 11 + Docker Desktop
+        - Rocky Linux 9 + Docker
+        - Other Linux + Docker
+        - Podman
+        - Local Python
+    validations:
+      required: true
+  - type: input
+    id: filetype
+    attributes:
+      label: Source file type
+      placeholder: docx / pdf / xlsx / other
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and sanitized logs
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true

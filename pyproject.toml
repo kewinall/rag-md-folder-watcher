@@ -1,0 +1,20 @@
+[project]
+name = "rag-md-folder-watcher"
+version = "1.0.1"
+description = "Containerized folder watcher that converts documents and images into RAG-ready Markdown."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+keywords = ["rag", "markdown", "ocr", "document-conversion", "folder-watcher"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: Markup :: Markdown",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

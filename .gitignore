@@ -1,0 +1,65 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime data
+/data/
+/storage/
+/input/
+/processing/
+/output/
+/archive/
+/failed/
+/quarantine/
+/state/
+/logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary and generated files
+*.tmp
+*.temp
+*.part
+*.partial
+*.uploading
+*.download
+*.crdownload
+*.log
+*.zip
+*.tar
+*.tar.gz
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini

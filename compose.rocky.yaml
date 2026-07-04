@@ -1,0 +1,4 @@
+services:
+  rag-md-watcher:
+    volumes:
+      - "${HOST_DATA_DIR:-./data}:/data:Z"
