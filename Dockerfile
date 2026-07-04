@@ -1,4 +1,4 @@
-FROM python:3.12-slim-bookworm
+FROM python:3.14-slim-bookworm
 
 ARG VERSION=1.0.1
 ARG SOURCE_REPOSITORY=https://github.com/unknown/rag-md-folder-watcher
