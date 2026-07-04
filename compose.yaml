@@ -5,8 +5,8 @@ services:
       dockerfile: Dockerfile
       args:
         VERSION: "${IMAGE_TAG:-1.0.1}"
-        SOURCE_REPOSITORY: "${SOURCE_REPOSITORY:-https://github.com/unknown/rag-md-folder-watcher}"
-    image: "${IMAGE_NAME:-rag-md-folder-watcher}:${IMAGE_TAG:-1.0.1}"
+        SOURCE_REPOSITORY: "${SOURCE_REPOSITORY:-https://github.com/kewinall/rag-md-folder-watcher}"
+    image: "${IMAGE_NAME:-ghcr.io/kewinall/rag-md-folder-watcher}:${IMAGE_TAG:-1.0.1}"
     container_name: rag-md-folder-watcher
     restart: unless-stopped
     user: "${CONTAINER_UID:-1000}:${CONTAINER_GID:-1000}"
